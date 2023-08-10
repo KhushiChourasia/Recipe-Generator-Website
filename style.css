@@ -1,0 +1,245 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:ital,wght@0,300;0,400;1,200;1,300&family=Roboto+Slab&family=Signika+Negative:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400; background-color: #fffed8;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    padding: 25px;
+    text-align: center;
+   
+}
+.search{
+    padding-top: 2.5rem;
+    margin: 2rem;
+   
+
+}
+.search h1{
+    font-weight: 600;
+    color: #ff4000;
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+   
+}
+.search h2{
+    font-weight: 600;
+    color: #ff4000;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    
+
+}
+.search blockquote{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #000000;
+}
+.search-box{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+.search-bar{
+   
+    padding: 0 1rem;
+    margin-left: 9vw;
+    font-size: 1.1rem;
+  
+    
+    border: 0.8rem;
+   color: #f8612f;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+   
+    background-color:#fbccac ;
+    width: 70%;
+   
+    
+}
+#search-btn{
+    background-color: rgb(255, 130, 85);
+    height: 50px;
+    width: 55px;
+    font-size: 1.7rem;
+    border: none;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius:2rem;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+
+
+}
+#search-btn:hover{
+    background-color: rgb(255, 130, 85)
+   
+}
+.card-body{
+    background-color: #f4f5e0;
+}
+.recipe-btn{
+    background-color: #f8612f;
+    color: #f4f5e0;
+    border: #ce3604;
+    position: absolute;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+   
+    
+}
+.meal-result h2{
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #f8612f;
+}
+.meal-recipe{
+    font-style: italic;
+    background-color: #f8612f;
+    color: white;
+    width: 40%;
+    height: 80%;
+    position: fixed;
+    top: 40%;
+    left: 20%;
+ 
+   padding:15px ;
+
+   border-radius: 1rem;
+    overflow-y: scroll;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transform: translate(20%, -40%);
+    -webkit-transform: translate(20%, -40%);
+    -moz-transform:translate(20%, -40%);
+    -ms-transform:translate(20%, -40%);
+    -o-transform: translate(20%, -40%);
+    display: none;
+    
+
+    
+}
+.meal-recipe::-webkit-scrollbar{
+
+    display: none;
+   
+}
+#close-button{
+    display: flex;
+    font-size: x-large;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ffffff;
+}
+
+
+.video-link{
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+/*js related*/
+
+.show-recipe{
+    display: block;
+}
+
+.meal-detail{
+    margin: 2rem;
+
+}
+.meal-detail img{
+    border-radius: 50%;
+    
+    height: 25%;
+    width: 20%;
+}
+.NotFound{
+   
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+  margin-left: 50vh;
+    
+   
+}
+@media screen and (max-width:500px){
+    .search h1{
+        text-align: center;
+        font-size: 3.5rem;
+        margin-right: 120px;
+    }
+    .search h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-right: 120px;
+
+    }
+    .search{
+        width: 480px;
+        margin: 1rem;
+    }
+    .search blockquote{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-right: 120px;
+    }
+
+    .meal-recipe{
+        width: 60%;
+        height: 70%;
+        transform: translate(0%, -40%);
+        -webkit-transform: translate(0%, -40%);
+        -moz-transform:translate(0%, -40%);
+        -ms-transform:translate(0%, -40%);
+        -o-transform: translate(0%, -40%);
+    }
+    .search-bar{
+   
+        padding: 0 0.5rem;
+        margin-left: 0vw;
+        font-size: 1rem;
+      
+    }
+    
+    .NotFound{
+   
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000000;
+      
+        transform: translate(-100%,0);
+        -webkit-transform: translate(-100%,0);
+        -moz-transform:translate(-100%,0);
+        -ms-transform:translate(-100%,0);
+        -o-transform: translate(-100%,0);
+     
+        
+       
+    }
+}
